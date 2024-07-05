@@ -1,0 +1,223 @@
+.catalog-container {
+  /* padding-top: 20px; */
+  position: relative;
+  max-width: 100%;
+  /* height: 100vh; Высота может быть любой, в зависимости от дизайна */
+  overflow: hidden;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Цвет фона, если видео не загружено
+  background-color: #f0f0f0;  */
+}
+
+.catalog-text {
+  /* color: #aaa; */
+  font: 400 50px Bitter, sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.catalog-text {
+  text-shadow: 0px 0px 10px #000;
+}
+
+@media (max-width: 991px) {
+  .catalog-text {
+    font-size: 40px;
+  }
+}
+
+.catalog-section,
+.contact-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+/* 
+.catalog-container {
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+}
+
+@media (max-width: 991px) {
+  .catalog-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+} */
+
+.catalog-button {
+  /* position: absolute; */
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1; /* Поверх видео, если требуется */
+}
+
+.catalog-button__details {
+  position: absolute;
+  bottom: 60%;
+  right: 70%;
+}
+
+.video-carousel {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Опционально: задать z-index, чтобы видео было под контентом */
+}
+
+.catalog-button {
+  justify-content: center;
+  border-radius: 3px;
+  border: 1px solid rgba(213, 135, 61, 1);
+  background-color: #222;
+  align-self: start;
+  margin-top: 70px;
+  padding: 17px 42px;
+  font: 300 15px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .catalog-button {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.catalog-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalog-card {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #54595f;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.catalog-card img {
+  aspect-ratio: 1.33;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+}
+
+.hot-deals-section {
+  margin-top: 75px;
+  text-align: center;
+  font: 500 40px Bitter, sans-serif;
+}
+
+.hot-deals-container {
+  margin-top: 57px;
+}
+
+.hot-deals-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hot-deal-card {
+  display: flex;
+  flex-direction: column;
+  font: 500 25px Inter, Helvetica, sans-serif;
+}
+
+.hot-deal-card img {
+  aspect-ratio: 1.33;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+}
+
+.trade-in-section {
+  display: flex;
+  margin-top: 80px;
+  gap: 20px;
+  align-items: center;
+}
+
+.trade-in-form {
+  display: flex;
+  flex-direction: column;
+  color: #2a2a2a;
+  font-weight: 600;
+  background-color: #eae8e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.trade-in-form label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+  font: 300 17px Inter, sans-serif;
+}
+
+.trade-in-form input {
+  margin-top: 14px;
+  padding: 18px 15px;
+}
+
+.trade-in-button {
+  border-radius: 5px;
+  background-color: #d5873d;
+  margin-top: 32px;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  font: 700 12px/100% Inter, Helvetica, sans-serif;
+}
+/* 
+.contact-section {
+  display: flex;
+  margin-top: 72px;
+  width: 1118px;
+  flex-direction: column;
+  padding: 0 20px;
+} */
+/* 
+.contact-info-container {
+  display: flex;
+  margin-top: 78px;
+  gap: 20px;
+}
+
+.contact-info-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a1d;
+  align-items: center;
+  padding: 47px 60px 10px;
+} */
+/* 
+.contact-info-box img {
+  aspect-ratio: 1.33;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+} */

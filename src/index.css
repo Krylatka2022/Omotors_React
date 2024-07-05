@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: radial-gradient(70.71% 141.42% at 0% 50%, #fff 67%, #a56c21 100%),
+    #fff;
+  /* background-image: url(../public/images/background.png);
+  background-repeat: no-repeat;
+  background-position: center center; */
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  /* max-width: 1280px; */
+  max-width: 100%;
+  .auth__inputs .profile__field input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-internal-autofill-selected {
+    border: none;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,177 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 28px;
+}
+.top-bar {
+  background-color: #eff0f0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  color: #737373;
+  justify-content: center;
+  padding: 12px 60px;
+}
+.contact-item {
+  display: flex;
+  gap: 8px;
+  text-transform: capitalize;
+  margin: auto 0;
+}
+.contact-icon {
+  width: 14px;
+  height: 14px;
+}
+.contact-text {
+  font-family: Roboto, sans-serif;
+}
+.main-header {
+  display: flex;
+  margin-top: 22px;
+  gap: 20px;
+  color: #262626;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 20px;
+}
+.company-icon {
+  width: 28px;
+  height: 18px;
+}
+.company-logo {
+  width: 198px;
+  max-width: 100%;
+}
+.separator {
+  border: 1px solid #c2c2c4;
+  width: 1px;
+  height: 35px;
+}
+.slogan {
+  font-family: Roboto, sans-serif;
+}
+.highlight {
+  color: #fff;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex-grow: 1;
+  margin: auto 0;
+  padding: 0 20px;
+}
+.nav-item {
+  font: 400 14px Roboto, sans-serif;
+}
+.nav-item.active {
+  color: #ca0100;
+}
+.contact-numbers {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  text-transform: uppercase;
+}
+.primary-contact {
+  display: flex;
+  gap: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.phone-icon {
+  width: 31px;
+  height: 31px;
+}
+.secondary-number {
+  font: 400 16px Roboto, sans-serif;
+}
+.callback-button {
+  border-radius: 6px;
+  background-color: #ca0100;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 18px 29px;
+  font: 700 16px Roboto, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+.catalog-nav {
+  display: flex;
+  margin-top: 13px;
+  width: 100%;
+  max-width: 1401px;
+  align-items: start;
+  gap: 20px;
+  padding: 0 20px;
+}
+.catalog-item {
+  display: flex;
+  margin-top: 16px;
+  gap: 12px;
+  font-size: 16px;
+  color: #262626;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.catalog-text {
+  font-family: Roboto, sans-serif;
+  flex-grow: 1;
+}
+.catalog-icon {
+  width: 12px;
+  height: 12px;
+}
+.taxi-credit {
+  color: #262626;
+  text-transform: uppercase;
+  margin-top: 16px;
+  flex-grow: 1;
+  font: 700 16px Roboto, sans-serif;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.social-icon {
+  width: 23px;
+  height: 23px;
+  stroke-width: 2px;
+  stroke: #737373;
+  border: 2px solid #737373;
+}
+@media (max-width: 991px) {
+  .top-bar {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .main-header {
+    flex-wrap: wrap;
+  }
+  .logo-section {
+    flex-wrap: wrap;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+  }
+  .callback-button {
+    padding: 0 20px;
+  }
+  .catalog-nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
