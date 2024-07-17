@@ -1,14 +1,14 @@
 // import { useState, useEffect } from 'react';
 // import ReactDOM from 'react-dom';
 
-import './App.css'
+import "./App.css";
 
 // import Main from './components/Main/Main.jsx';
 // import ReactDOM from 'react-dom';
-import PageContainer from './components/Page/PageContainer.jsx';
+import PageContainer from "./components/Page/PageContainer.jsx";
+import Header from "./components/Header/Header.jsx";
 
 const App = () => {
-
   // fetch('https://omotorsword/wp-json/wp/v2/pages?slug=avto-s-probegom')
   //   .then(response => {
   //     if (!response.ok) {
@@ -45,12 +45,13 @@ const App = () => {
     <>
       {/* <Main /> */}
       <div>
-        <h2>My WordPress Pages</h2>
+        {/* <h2>My WordPress Pages</h2> */}
+        <Header></Header>
         <PageContainer slug="avto-s-probegom" />
       </div>
     </>
-  )
-}
+  );
+};
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 export default App;

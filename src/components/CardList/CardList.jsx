@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-// import './CardList.css'
+import "./CardList.css";
 
 // const CarCard = ({ image, name, power, acceleration, fuelConsumption }) => (
 //     <article className="car-card">
@@ -30,13 +30,10 @@
 //     name: PropTypes.string.isRequired,
 //     power: PropTypes.string.isRequired,
 
-
 //     acceleration: PropTypes.string.isRequired,
-
 
 //     fuelConsumption: PropTypes.string.isRequired,
 // };
-
 
 // function CardList() {
 //     const carData = [
@@ -82,78 +79,110 @@
 // }
 
 // export default CardList;
-// import PropTypes from 'prop-types';
+// import PropTypes from "prop-types";
 // const CarCard = ({ image, name, power, acceleration, fuelConsumption }) => (
-//     <article className="car-card">
-//         <div className="car-image-wrapper">
-//             <img loading="lazy" src={image} alt={name} className="car-image" />
-//         </div>
-//         <h2 className="car-name">{name}</h2>
-//         <div className="car-specs">
-//             <div className="spec-item">
-//                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0eee8d970547e7c8192597c12d735a9cdb2f31b8fc74f076e9b2916b7d36fdaa?apiKey=cc5bec9b519e49cc969df3e32a6ea878&" alt="" className="spec-icon" />
-//                 <p className="spec-text">{power}</p>
-//             </div>
-//             <div className="spec-item">
-//                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2395e4f94c14a22a0832027e89ae69dfc1042616bdb4932e35ce97c8a67a0724?apiKey=cc5bec9b519e49cc969df3e32a6ea878&" alt="" className="spec-icon" />
-//                 <p className="spec-text">{acceleration}</p>
-//             </div>
-//             <div className="spec-item">
-//                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/76d779cd2abe3182d483fca3abceaef29f1f696fda380aed75853ac7daf58f31?apiKey=cc5bec9b519e49cc969df3e32a6ea878&" alt="" className="spec-icon" />
-//                 <p className="spec-text">{fuelConsumption}</p>
-//             </div>
-//         </div>
-//         <button className="price-button">Узнать цену</button>
-//     </article>
+//   <article className="car-card">
+//     <div className="car-image-wrapper">
+//       <img loading="lazy" src={image} alt={name} className="car-image" />
+//     </div>
+//     <h2 className="car-name">{name}</h2>
+//     <div className="car-specs">
+//       <div className="spec-item">
+//         <img
+//           loading="lazy"
+//           src="https://cdn.builder.io/api/v1/image/assets/TEMP/0eee8d970547e7c8192597c12d735a9cdb2f31b8fc74f076e9b2916b7d36fdaa?apiKey=cc5bec9b519e49cc969df3e32a6ea878&"
+//           alt=""
+//           className="spec-icon"
+//         />
+//         <p className="spec-text">{power}</p>
+//       </div>
+//       <div className="spec-item">
+//         <img
+//           loading="lazy"
+//           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2395e4f94c14a22a0832027e89ae69dfc1042616bdb4932e35ce97c8a67a0724?apiKey=cc5bec9b519e49cc969df3e32a6ea878&"
+//           alt=""
+//           className="spec-icon"
+//         />
+//         <p className="spec-text">{acceleration}</p>
+//       </div>
+//       <div className="spec-item">
+//         <img
+//           loading="lazy"
+//           src="https://cdn.builder.io/api/v1/image/assets/TEMP/76d779cd2abe3182d483fca3abceaef29f1f696fda380aed75853ac7daf58f31?apiKey=cc5bec9b519e49cc969df3e32a6ea878&"
+//           alt=""
+//           className="spec-icon"
+//         />
+//         <p className="spec-text">{fuelConsumption}</p>
+//       </div>
+//     </div>
+//     <button className="price-button">Узнать цену</button>
+//   </article>
 // );
 
 // CarCard.propTypes = {
-//     image: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     power: PropTypes.string.isRequired,
-//     acceleration: PropTypes.string.isRequired,
-//     fuelConsumption: PropTypes.string.isRequired,
+//   image: PropTypes.string.isRequired,
+//   name: PropTypes.string.isRequired,
+//   power: PropTypes.string.isRequired,
+//   acceleration: PropTypes.string.isRequired,
+//   fuelConsumption: PropTypes.string.isRequired,
 // };
 
 // const CardList = ({ carData }) => {
-//     return (
-//         <section className="car-showcase">
-//             {carData.map((car, index) => (
-//                 <CarCard key={index} {...car} />
-//             ))}
-//         </section>
-//     );
+//   return (
+//     <section className="car-showcase">
+//       {carData.map((car, index) => (
+//         <CarCard key={index} {...car} />
+//       ))}
+//     </section>
+//   );
 // };
 
 // CardList.propTypes = {
-//     carData: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             image: PropTypes.string.isRequired,
-//             name: PropTypes.string.isRequired,
-//             power: PropTypes.string.isRequired,
-//             acceleration: PropTypes.string.isRequired,
-//             fuelConsumption: PropTypes.string.isRequired
-//         })
-//     ).isRequired
+//   carData: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       image: PropTypes.string.isRequired,
+//       name: PropTypes.string.isRequired,
+//       power: PropTypes.string.isRequired,
+//       acceleration: PropTypes.string.isRequired,
+//       fuelConsumption: PropTypes.string.isRequired,
+//     })
+//   ).isRequired,
 // };
 
 // export default CardList;
 
+// const CardList = ({ carData }) => {
+//   return (
+//     <div className="card-list">
+//       {carData.map((car, index) => (
+//         <div key={index} className="card">
+//           <img src={car.image} alt={car.name} />
+//           <h2>{car.name}</h2>
+//           <p>Мощность: {car.power}</p>
+//           <p>Разгон: {car.acceleration}</p>
+//           <p>Расход топлива: {car.fuelConsumption}</p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
 const CardList = ({ carData }) => {
-    return (
-        <div className="card-list">
-            {carData.map((car, index) => (
-                <div key={index} className="card">
-                    <img src={car.image} alt={car.name} />
-                    <h2>{car.name}</h2>
-                    <p>Мощность: {car.power}</p>
-                    <p>Разгон: {car.acceleration}</p>
-                    <p>Расход топлива: {car.fuelConsumption}</p>
-                </div>
-            ))}
+  console.log("Car data received by CardList:", carData);
+
+  return (
+    <div className="card-list">
+      {carData.map((car, index) => (
+        <div key={index} className="car-card">
+          {car.image && <img src={car.image} alt={car.name} />}
+          {car.name && <h2>{car.name}</h2>}
+          {car.power && <p>Мощность: {car.power}</p>}
+          {car.acceleration && <p>Разгон: {car.acceleration}</p>}
+          {car.fuelConsumption && <p>Расход топлива: {car.fuelConsumption}</p>}
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default CardList;

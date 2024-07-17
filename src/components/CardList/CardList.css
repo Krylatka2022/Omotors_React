@@ -95,3 +95,30 @@
     padding: 20px;
   }
 }
+/* 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  width: calc(33.333% - 32px);
+  box-sizing: border-box;
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.car-card h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.car-card p {
+  margin: 0.5em 0;
+} */
